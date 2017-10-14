@@ -12,7 +12,7 @@ package Ejercito;
  * @since 13.10.2017
  * Soldado.java
  */
-public class Soldado extends Militar 
+public class Soldado extends General 
 {
 /**
  * metodo para obtener horas de un soldado
@@ -36,7 +36,7 @@ public class Soldado extends Militar
  */ 
     public int getDiasVacaciones() 
     {
-        return super.getDiasVacaciones()/2;           // 1 semana de vacaciones pagadas
+        return super.getDiasVacaciones() - 5 /2;           // 1 semana de vacaciones pagadas
     }
     /**
  * metodo para recibir una orden
